@@ -15,7 +15,7 @@
             height: 100vh; /* Ensure the body takes up the full height of the screen */
             margin: 0;
             color: white;
-            position: relative; /* Ensure the overlay can be positioned absolutely */
+            position: relative; /* Ensures that the overlay is positioned properly */
         }
 
         /* Add a dark overlay to cover the entire page */
@@ -24,9 +24,9 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%; /* Make sure the overlay covers the entire height */
+            height: 100%; /* Ensure the overlay covers the entire height of the page */
             background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-            z-index: -1; /* Places the overlay behind the content */
+            z-index: 0; /* Lower z-index to ensure overlay stays behind the content */
         }
 
         /* Heading style */
@@ -36,6 +36,7 @@
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Adds depth with shadow */
             font-family: 'Georgia', serif; /* Elegant font */
             margin-top: 100px; /* Adds space from the top */
+            z-index: 1; /* Ensure the text is above the overlay */
         }
 
         /* Paragraph style */
@@ -45,6 +46,7 @@
             color: white;
             margin-top: 20px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for better contrast */
+            z-index: 1; /* Ensure the text is above the overlay */
         }
 
         /* Link style */
@@ -71,6 +73,10 @@
     <p>This domain is for sale and can be purchased at: <br><br>
         <a href="https://www.namecheap.com/market/buynow/glassespc.com/" target="_blank">https://www.namecheap.com/market/buynow/glassespc.com/</a>
     </p>
+
+</body>
+</html>
+
 
 </body>
 </html>
